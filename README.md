@@ -41,10 +41,10 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-This creates the virtual environment here:
+This creates the virtual environment inside your local project checkout:
 
 ```text
-E:\Python scripts\Yolo Trainer\.venv
+<project-root>/.venv
 ```
 
 2. Install Python dependencies:
@@ -68,10 +68,11 @@ After creating the virtual environment, set VS Code to use it for this project:
 1. Open the `Yolo Trainer` folder in VS Code.
 2. Press `Ctrl+Shift+P`.
 3. Run `Python: Select Interpreter`.
-4. Choose:
+4. Choose the interpreter from this project's virtual environment.
 
 ```text
-E:\Python scripts\Yolo Trainer\.venv\Scripts\python.exe
+Windows: <project-root>\.venv\Scripts\python.exe
+macOS/Linux: <project-root>/.venv/bin/python
 ```
 
 If it does not appear in the list:
@@ -80,10 +81,11 @@ If it does not appear in the list:
 2. Run `Python: Select Interpreter`.
 3. Choose `Enter interpreter path`.
 4. Choose `Find...`.
-5. Select:
+5. Select the interpreter from this project's virtual environment:
 
 ```text
-E:\Python scripts\Yolo Trainer\.venv\Scripts\python.exe
+Windows: <project-root>\.venv\Scripts\python.exe
+macOS/Linux: <project-root>/.venv/bin/python
 ```
 
 Once selected, VS Code will use the project environment for imports, linting, debugging, and terminal Python commands in this workspace.
