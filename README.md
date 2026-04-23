@@ -2,6 +2,12 @@
 
 Yolo Trainer is a local desktop-friendly web application for managing camera training projects, additive YOLO dataset imports, async training runs, and run comparison.
 
+## Overview
+
+![Dataset Import](./docs/Screenshots/Dataset%20Import.png)
+
+![Training Page](./docs/Screenshots/Training%20Page.png)
+
 ## Stack
 
 - Backend: Python 3.12, FastAPI, SQLite, Pydantic, Ultralytics YOLO
